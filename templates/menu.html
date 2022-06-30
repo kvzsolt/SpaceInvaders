@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Space Invaders by Tukán Games</title>
+    <meta charset="UTF-8">
+    <!-- http://proger.i-forge.net/The_smallest_transparent_pixel/ -->
+    <link rel="icon" href="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="/static/pics/favicon.ico">
+    <script src="{{url_for('static', filename='game.js')}}" defer></script>
+</head>
+<body>
+<div class="bg-left"></div>
+{% block head %}<h1>TUKÁN<div class="title-games">GAMES</div></h1>{% endblock %}
+{% block content %}
+
+<div class="menu-container">
+    <ul>
+        <li><a href="/game">New Game</a></li>
+        <li><a href="/highscores">Highscores</a></li>
+    </ul>
+</div>
+{% endblock %}
+</body>
+</html>

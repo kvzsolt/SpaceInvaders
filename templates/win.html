@@ -1,0 +1,14 @@
+{% extends "menu.html" %}
+{% block content %}
+    <script src="{{url_for('static', filename='fireworks.js')}}" defer></script>
+    <div class="winning-div">
+        <h2 class="winning">You Won</h2>
+        <h3>Level completed: <span>1</span></h3>
+        <div class="winning-input">
+            <span class="text">Enter your name:</span>
+            <input/>
+            <button>Submit</button>
+        </div>
+        <a class="new-game-button" href="/game">New Game</a>
+    </div>
+{% endblock %}
